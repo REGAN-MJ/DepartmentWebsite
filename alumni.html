@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Alumni Page</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Segoe UI, Arial, sans-serif;
+background:#f4f7fb;
+color:#333;
+}
+
+/* HEADER */
+header{
+background:navy;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+/* CONTAINER */
+.container{
+width:90%;
+max-width:1100px;
+margin:30px auto;
+}
+
+/* SECTION TITLE */
+.section-title{
+color:navy;
+margin-bottom:15px;
+border-left:5px solid navy;
+padding-left:10px;
+}
+
+/* SUCCESS STORY */
+.success{
+display:flex;
+gap:20px;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+margin-bottom:30px;
+align-items:center;
+}
+
+.success img{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+}
+
+.success h3{
+color:navy;
+}
+
+/* ALUMNI GRID */
+.alumni-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card img{
+width:90px;
+height:90px;
+border-radius:50%;
+margin-bottom:10px;
+object-fit:cover;
+border:3px solid navy;
+}
+
+.card h4{
+color:navy;
+}
+
+/* OPPORTUNITIES */
+.opportunities{
+background:navy;
+color:white;
+padding:25px;
+border-radius:10px;
+margin-top:30px;
+}
+
+.opportunities ul{
+margin-top:10px;
+padding-left:20px;
+}
+
+.btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 15px;
+background:white;
+color:navy;
+border-radius:5px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#ddd;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Alumni Network</h1>
+<p style="font-size: 50PX;">ALUMNI NETWORK</p>
+</header>
+   <!-- Hamburger -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav-menu" id="nav-menu">
+    <a href="index.html" data-icon="🏠"class="courses-btn">Home</a>
+    <a href="courses.html" data-icon="📚" class="courses-btn">Courses</a>
+    <a href="staff.html" data-icon="ℹ️" class="courses-btn">Staff</a>
+    <a href="timetable.html" data-icon="✉️" class="courses-btn">Timetable</a>
+    <a href="alumni.html" data-icon="👨‍🎓" class="courses-btn">Alumini</a>
+  </nav>
+
+<div class="container">
+
+<!-- SUCCESS STORY -->
+<h2 class="section-title">Success Story</h2>
+
+<div class="success">
+<img src="image/joshgmit-ai-generated-7849615_1920.jpg" alt="John Doe">
+
+<div>
+<h3>Eng. John Doe – National ICT Leader</h3>
+<p>
+Eng. John Doe enrolled at the university with a passion for technology and problem-solving. 
+During his time pursuing a Bachelor of Science in Software Engineering, he actively participated 
+in coding competitions, led student innovation clubs, and developed several impactful academic projects.
+</p>
+
+<p>
+One of his most notable projects was a digital records management system designed to improve efficiency 
+in public institutions. This project gained recognition beyond the university and opened doors for 
+collaboration with government agencies.
+</p>
+
+<p>
+After graduation, John secured a competitive internship at the Ministry of ICT, where his performance 
+quickly distinguished him as a top talent. Within a few years, he rose through the ranks and became 
+a key contributor to national digital transformation initiatives.
+</p>
+
+<p>
+Today, Eng. John Doe serves as a Senior ICT Advisor, leading major e-government projects that enhance 
+service delivery, transparency, and accessibility for millions of citizens. His journey reflects the 
+power of dedication, innovation, and the strong academic foundation provided by the university.
+</p>
+
+<p>
+He continues to give back to the institution by mentoring students, offering internship opportunities, 
+and supporting tech-driven initiatives within the alumni network.
+</p>
+</div>
+</div>
+
+<!-- NOTABLE ALUMNI -->
+<h2 class="section-title">Notable Alumni in Government</h2>
+
+<div class="alumni-grid">
+
+<div class="card">
+<img src="image/jump1987-woman-7895953_1920.jpg">
+<h4>Hon. Sarah K.</h4>
+<p>Minister of Education</p>
+</div>
+
+<div class="card">
+<img src="image/moni_memoni-man-8147400_1920.jpg">
+<h4>Eng. David M.</h4>
+<p>ICT Authority Director</p>
+</div>
+
+<div class="card">
+<img src="image/jump1987-woman-7895953_1920.jpg">
+<h4>Dr. Grace N.</h4>
+<p>Health Policy Advisor</p>
+</div>
+
+<div class="card">
+<img src="image/artisticoperations-man-3278519_1920.jpg">
+<h4>Mr. Paul O.</h4>
+<p>Commissioner of Finance</p>
+</div>
+
+<div class="card">
+<img src="image/moni_memoni-man-8147400_1920.jpg">
+<h4>Ms. Linda A.</h4>
+<p>Parliamentary IT Specialist</p>
+</div>
+
+</div>
+
+<!-- OPPORTUNITIES -->
+<h2 class="section-title">Opportunities & Internships</h2>
+
+<div class="opportunities">
+<p>Explore opportunities available through our alumni network:</p>
+
+<ul>
+<li>Government Internship Programs</li>
+<li>Graduate Trainee Opportunities</li>
+<li>Scholarships & Fellowships</li>
+<li>Mentorship Programs</li>
+<li>Tech Innovation Projects</li>
+</ul>
+
+<a href="#" class="btn">Apply Now</a>
+</div>
+
+</div>
+<script src="department.js"></script>
+</body>
+</html>
